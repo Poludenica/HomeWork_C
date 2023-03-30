@@ -55,19 +55,19 @@
 // }
 
 //  Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-bool Div3(int num2)
-{
-    if (num2 >= 1 && num2 <= 5 || num2 > 7)
-    {
-        return false;
-    }
-    else
-    {
-        return true;
-    }
-}
+// bool Div3(int num2)
+// {
+//     if (num2 >= 1 && num2 <= 5 || num2 > 7)
+//     {
+//         return false;
+//     }
+//     else
+//     {
+//         return true;
+//     }
+// }
 
-Console.Write("Введите день недели: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите день недели: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Div3(num2));
+// Console.WriteLine(Div3(num2));
