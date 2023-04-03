@@ -113,32 +113,71 @@
 // PrintArray(arr);
 
 // упорядочивание в обратном порядке
+
+// int [] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+
+// void printArray (int[] array)
+// {
+//     int count = array.Length;
+//     for(int i = 0; i < count; i++)
+//     {
+//         Console.Write($"{array[i]}, ");
+//     }
+//     Console.WriteLine();
+// }
+// void SelectionSort (int[] array)
+// {
+//     for ( int i = 0; i < array.Length; i++)
+//     {
+//         int maxPosition = i;
+//         for(int j = i; j < array.Length; j++)
+//         {
+//             if(array[j] > array[maxPosition]) maxPosition = j;
+//         }
+//         int temporary = array[i];
+//         array[i] = array [maxPosition];
+//         array[maxPosition] = temporary;
+//     }
+// }
+// printArray(arr);
+// SelectionSort(arr);
+// printArray(arr);
+
+
+// цикл While. В while необходимо прописать лишь условие, а все остальные параметры записываются вне цикла:
 /*
-int [] arr = { 1, 7, 1, 8, 6, 5};
-void printArray (int[] array)
+int star = 0;
+
+while (star < 5)
 {
-    int count = array.Length;
-    for(int i = 0; i < count; i++)
-    {
-        Console.Write($"{array[i]}, ");
-    }
-    Console.WriteLine();
+    Console.WriteLine("*");
+    star++;
+
 }
-void SelectionSort (int[] array)
-{
-    for ( int i = 0; i < array.Length; i++)
-    {
-        int maxPosition = i;
-        for(int j = i; j < array.Length; j++)
-        {
-            if(array[j] > array[maxPosition]) maxPosition = j;
-        }
-        int temporary = array[i];
-        array[i] = array [maxPosition];
-        array[maxPosition] = temporary;
-    }
-}
-printArray(arr);
-SelectionSort(arr);
-printArray(arr);
 */
+
+// цикл For. 
+// В цикле for все условия записываются в одном месте,
+// что очень удобно во многих случаях. Стандартная запись такого цикла выглядит следующим образом:
+// for (int i = 0; i < 10; i++)
+//	printf("%d\n", i);
+// В объявлении цикла записывается следующее: переменная цикла, её начальное значение и диапазон.
+// В примере выше будут выведены числа от 0 до 10.
+// Если в теле цикла всего одна строка кода, то фигурные скобки можно пропустить и не записывать их.
+
+// Цикл Do While
+// Цикл схож с циклом while по форме написания, но при этом работает немного по-другому. 
+// Цикл do..while будет выполнен один раз сто процентов, а дальше проверит условие и если оно верно, то цикл будет выполняться дальше:
+// int x = 13;
+// do {
+// 	x--;
+// 	printf("%d\n", i);
+// } while (x > 10);
+// Как видно из примера, цикл изначально неверный, но это не мешает ему сработать один раз.
+
+
+// Операторы для работы в циклах
+// Существует два основных оператора для работы в циклах:
+
+// Оператор break - служит для выхода из цикла полностью;
+// Оператор continue - пропускает лишь одну итерацию и не выходит из цикла.
