@@ -54,7 +54,7 @@
 // Task 3. Напишите программу,
 // которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
 
-
+/*
 int multiplyNum(int num)
 {
     int total = 1;
@@ -70,7 +70,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Факториал числа {num} : {multiplyNum(num)}");
 
-
+*/
 // массивы. 
 /*
 int[] CreateRandomArray(int size, int minValue, int maxValue) //метод 
@@ -105,3 +105,69 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] newArray = CreateRandomArray(size, min, max);
 ShowArray(newArray);
 */
+
+// Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. 
+//Найдите сумму отрицательных элементов массива.
+
+/*
+int[] CreateRandomArray(int size, int minValue, int maxValue) //метод 
+{
+    int[] array = new int[size]; //выделяет в оперативной памяти место
+
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(minValue, maxValue + 1);
+
+    }
+    return array;
+}
+void ShowArray(int[] array) //следующий метод. выведение массива 
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+int GetNegativeSum(int[] array)
+{
+    int sum = 0;
+
+    for(int i = 0; i < array.Length; i++)
+    {
+        if(array[i] < 0)
+          sum += array[i]; //то же самое что sum = sum + array[i]
+    }
+    return sum;
+}
+Console.Write("Input a size for array: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+int minValue = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value: ");
+int maxValue = Convert.ToInt32(Console.ReadLine());
+
+int[] newArray = CreateRandomArray(size, minValue, maxValue);
+
+
+
+ShowArray(newArray);
+int res = GetNegativeSum(newArray);
+Console.WriteLine("Sum of negative elements is " + res);
+*/
+
+// 1. Напишите программу замена элементов массива:
+// положительные элементы замените на соответствующие отрицательные, и наоборот.
+// * -1
+
+// 2. Напишите программу, 
+// которая определяет, присутствует ли заданное число в массиве.
+
+
+// 3. Задайте одномерный массив из m случайных чисел. 
+// Найдите количество элементов массива, значения которых лежат в отрезке [a,b].
+// int , метод аналитический, 
+
+
+// по ДЗ 1. категория методов - аналитический, 2. позиции - это индекс. 3. по команду next кот генерирует целое число в заданном диапозоне. Есть еще метод NextDouble() он не принимает аргументов и он генерирует вещественные числа от 0 до 1. Next + NextDouble() чтобы получить 12,25 например.
